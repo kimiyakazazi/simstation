@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMStation JobInterview - Design Challenge</title>
+
+    <!--
+        Bootstrap css import cdn
+    -->
+    <link rel="stylesheet" href="libs/bootstrap-5.1.0-dist/css/bootstrap.min.css">
+
+    <!--
+        Custom Styles import
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="container pageWrapper">
+    <div class="challengeContainer">
+        <div class="row">
+            <div class="col-12 challengeHeader">
+
+                <h2 class="h2">
+                    Design Challenge
+                </h2>
+
+            </div>
+
+            <div class="col-12 challengeSubHeader">
+                In this challenge you are supposed to design a component based on a (text) description as well as a hand
+                drawn sketch.
+                The hand drawn sketch is only a rough visualization of what we want from you. So dont hesitate to adjust
+                your design and component as you see fit.<br>
+
+                You can use HTML, CSS and JS.
+                If you want to use a design framework other than bootstrap feel free to import it within this file.
+                Your component should be implemented within the below div with the id "custom component"
+            </div>
+        </div>
+
+        <div class="row componentHolder">
+
+            <div class="col-6 designDescription">
+                We want a new component for our website.<br>
+                This component will be used as a teaser card for various articles.<br>
+                The Component should be able to:
+
+                <ul>
+                    <li>display a header image previewing the article</li>
+                    <li>display the article Title</li>
+                    <li>display the article subTitle</li>
+                    <li>display an article short description (max. 250 character)</li>
+                </ul>
+
+                The Short description of the Article should be collapsable.
+                On default the cards description is collapsed.
+                
+                <img src="res/designChallengeSketch.PNG">
+
+            </div>
+
+
+            <div class="col-6">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h2">Your Design:</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div id="custom component">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="controlButtons">
+
+        <button class="btn btn-primary prevBtn">
+            <a href="cssChallenge.html">Previous Challenge</a>
+        </button>
+
+        <button class="btn btn-primary nextBtn">
+            <a href="./restApiChallenge.html">Next Challenge</a>
+        </button>
+
+    </div>
+
+</div>
+
+<!--
+    Bootstrap and jquery cdn
+-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="libs/bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/jquery/jquery.js"></script>
+</body>
+</html>

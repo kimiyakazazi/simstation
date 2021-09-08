@@ -1,0 +1,113 @@
+.pageWrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.challengeContainer .challengeHeader {
+    background-color: #279989;
+    padding: 30px;
+    color: white;
+}
+
+.challengeContainer .challengeSubHeader {
+    padding: 25px;
+    color: #279989;
+    background-color: #b2dfdb;
+}
+
+.cssChallengeContainer {
+    text-align: center;
+}
+
+.goToTaskContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cssChallengeContainerTask {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #00000021;
+}
+
+.cssChallengeContainerTask iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.colorsToUseContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.colorsToUseContainer .colors {
+    display: flex;
+}
+
+.cssChallangeTaskDescription {
+    padding: 20px;
+}
+
+.colorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+.colorContainer .colorDot {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.controlButtons {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.prevBtn a, .nextBtn a {
+    color: white;
+    text-decoration: none;
+}
+
+.prevBtn {
+    margin-right: 12px;
+}
+
+.componentHolder {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.designDescription {
+    padding-left: 20px;
+    border-left: 10px solid #279989;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.detailedDescriptionAPI {
+    padding: 20px;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+}
+
+.getBtnTask01 {
+    margin-top: 20px;
+}
+
+.taskDescription {
+    margin-top: 25px;
+}
+
+.spacer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

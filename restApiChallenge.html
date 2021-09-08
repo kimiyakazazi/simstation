@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMStation JobInterview - REST Api Challenge</title>
+
+    <!--
+        Bootstrap css import cdn
+    -->
+    <link rel="stylesheet" href="libs/bootstrap-5.1.0-dist/css/bootstrap.min.css">
+
+    <!--
+        Custom Styles import
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="container pageWrapper">
+    <div class="challengeContainer">
+        <div class="row">
+            <div class="col-12 challengeHeader">
+
+                <h2 class="h2">
+                    REST Api Challenge
+                </h2>
+
+            </div>
+
+            <div class="col-12 challengeSubHeader">
+                In this challenge you will be working with a REST Api.<br>
+
+                <a href="https://jsonplaceholder.typicode.com/">This</a> is a free api which gives you a list of Todos,
+                Users, posts etc.<br>
+                In the following tasks you have to work with the api and manipulate its response.<br>
+
+                In order to fetch the response of the <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder
+                api</a> api you should be using JavaScript.<br><br>
+
+                <b>TIPS:</b><br>
+                I recommend you to create a separate js file which handles the api calls and all event handlers needed
+                for the tasks.<br>
+                There are countless js libraries which enable you to easily fetch data from an api.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Task 01 - Fetch all todos and display them in the console
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+
+                    <div class="col-12">
+                        <div class="detailedDescriptionAPI">
+                            When clicking on the button "GET" a request to the api should be made.
+                            The ouput should be displayed in the console.<br>
+                            All TODOs should be loaded.<br>
+                            <b>TIP:</b><br>
+                            The Todos can be loaded under /todos (see <a target="_blank"
+                                                                         href="https://jsonplaceholder.typicode.com/">here</a>
+                            under Ressources )
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary getBtnTask01" id="getBtnTask01">
+                            GET
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Task 02 - Fetch the user under <b> /users </b> with the id 6
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+
+                    <div class="col-12">
+                        <div class="detailedDescriptionAPI">
+                            When clicking on the button "GET" a request to the api should be made.
+                            The ouput should be displayed in the console.<br>
+                            Only one user with the id 6 should be loaded<br>
+                            The phone number as well as the address of this user should be displayed in the div with the
+                            id <code>task02Result</code>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary getBtnTask01" id="getBtnTask02">
+                            GET
+                        </button>
+                    </div>
+
+                    <div class="col-6">
+                        <b>Result: </b>
+                    </div>
+                    <div class="col-6" id="task02Result">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                    Task 03 - Fetch all users and manipulate the response
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+
+                    <div class="col-12">
+                        <div class="detailedDescriptionAPI">
+                            When clicking on the button "GET" a request to the api should be made.
+                            The output should be displayed in the console.<br>
+                            All users should be loaded.<br>
+                            The results should be sorted by the name of the users.<br>
+                            The name and email address should be replaced with your name and email address.<br>
+                            Then the manipulated api response should be displayed in the div with the id <code>task03Result</code>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary getBtnTask01" id="getBtnTask03">
+                            GET
+                        </button>
+                    </div>
+
+                    <div class="col-6">
+                        <b>Result: </b>
+                    </div>
+                    <div class="col-6" id="task03Result">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                        aria-controls="flush-collapseFour">
+                    Task 04 - api integration within your component
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+
+                    <div class="col-12">
+                        <div class="detailedDescriptionAPI">
+                            When clicking on the button "GET" a request to the api should be made.<br>
+                            One random post (/posts) should be loaded as well as a random photo (/photos)<br>
+                            In order to load a random post / photo you should generate a random integer between 25 and
+                            55. After generating a random number for your post and another one for your photo you can
+                            start your queries with those random numbers as the paramter for the <b>id</b><br>
+                            After successfully querying your data take your custom component from <a
+                                href="designCardChallange.html">challenge 2</a> and fill in the data you got from the
+                            api.<br>
+                            The header image should be taken from the result of your photo query (attribute: "url")<br>
+                            The title and the body of your post should be the title and short-description of your
+                            designed card.<br>
+                            The subTitle should be empty.<br>
+                            Your html markup for your card can be pasted within the div with the id <code>"myAwesomeCard"</code><br>
+                            Don't forget to apply your styles you have created in challenge2 for this card as well.<br>
+                            So every time you click the "GET" Button the card should now be filled with another image
+                            and different title, shortDescription.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary getBtnTask01" id="getBtnTask04">
+                            GET
+                        </button>
+                    </div>
+
+                    <div class="col-6">
+                        <b>Result: </b>
+                        <div id="myAwesomeCard">
+
+                        </div>
+                    </div>
+                    <div class="col-6" id="task04Result">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="controlButtons">
+
+        <button class="btn btn-primary prevBtn">
+            <a href="./designCardChallange.html">Previous Challenge</a>
+        </button>
+
+        <button class="btn btn-primary nextBtn">
+            <a href="./finalAssessment.html">Final Challenge</a>
+        </button>
+
+    </div>
+
+</div>
+
+<!--
+    Bootstrap and jquery cdn
+-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="libs/bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/jquery/jquery.js"></script>
+</body>
+</html>

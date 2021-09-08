@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMStation JobInterview - Final Challenge</title>
+
+    <!--
+        Bootstrap css import cdn
+    -->
+    <link rel="stylesheet" href="libs/bootstrap-5.1.0-dist/css/bootstrap.min.css">
+
+    <!--
+        Custom Styles import
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="container pageWrapper">
+    <div class="challengeContainer">
+        <div class="row">
+            <div class="col-12 challengeHeader">
+
+                <h2 class="h2">
+                    Final Challenge
+                </h2>
+
+            </div>
+
+            <div class="col-12 challengeSubHeader">
+                In this final challenge you will be creating a little web application.<br>
+                Which tools you are using and how you design your webapp is completely up to you.<br>
+                So dont hesitate and feel free to let your programmer heart take over :).
+            </div>
+        </div>
+    </div>
+
+    <div class="taskDescription">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2">Prerequisite:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                For this web application you should create a new folder within this project. <br>
+                If you want you can use any js framework you feel comfortable to implement this task but its not required to use any.<br>
+                The end result should be a finished webapplication. Your created <code>index.html</code> should be the entry point to your application.
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2">Task Description:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                Your job is to implement a web application which displays a list of todos.<br>
+                Those todos should be loaded from following endpoint <code>https://jsonplaceholder.typicode.com/todos</code><br>
+                This Endpoint gives you a total of 200 Todo objects. <br>
+                When your index.html is loaded the first 10 Todos should be displayed automatically.<br>
+                There should be a element which enables the user to display more Todos (the next 10 Objects).<br>
+                Every todo you get from this endpoint has an attribute <code>"completed:"</code>, if this attribute is true this todo element should be marked as done<br>
+                You could for example color completed Todos green or show an checkmark within those elements. Be creative ^^.<br>
+                <b>TIP:</b> you can load all 200 todos on load and fill in the first 10. Its not a requirement to load only 10 todos at a time.<br><br>
+                How you display the list of todos is completely up to you. It should definitely be user friendly as well as good designed.<br>
+                Try to embed all common SEO (Search Engine Optimization) features you are familiar with.<br>
+                Don't forget to comment your code.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="controlButtons">
+
+        <button class="btn btn-primary prevBtn">
+            <a href="./restApiChallenge.html">Previous Challenge</a>
+        </button>
+
+    </div>
+
+</div>
+
+<!--
+    Bootstrap and jquery cdn
+-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="libs/bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/jquery/jquery.js"></script>
+</body>
+</html>
