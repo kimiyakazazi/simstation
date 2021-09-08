@@ -1,0 +1,98 @@
+<style>
+
+    .background {
+        width: 100%;
+        height: 100%;
+        background-color: #293462;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head {
+        background: radial-gradient(circle at 50% -130px, #FE5F55 200px, #A64942 200px);
+        width: 150px;
+        height: 100px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nostril {
+        background-color: #293462;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        margin-top: 12px;
+    }
+
+    .nostril1 {
+        margin-right: 5px;
+    }
+
+    .nostril2 {
+        margin-left: 5px;
+    }
+
+    .eye {
+        width: 50px;
+        height: 50px;
+        background-color: #FE5F55;
+        border-radius: 100%;
+        position: absolute;
+        top: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eyeLeft {
+        left: 135px;
+    }
+
+    .eyeRight {
+        right: 135px;
+    }
+
+    .eye .eyeYellow {
+        width: 30px;
+        height: 30px;
+        background-color: #FFF1C1;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eye .eyeYellow .pupil {
+        background-color: #293462;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+    }
+
+</style>
+
+<div class="background">
+    <div class="head">
+        <div class="nostril nostril1">
+
+        </div>
+        <div class="nostril nostril2">
+
+        </div>
+    </div>
+
+    <div class="eye eyeLeft">
+        <div class="eyeYellow">
+            <div class="pupil"></div>
+        </div>
+    </div>
+
+    <div class="eye eyeRight">
+        <div class="eyeYellow">
+            <div class="pupil"></div>
+        </div>
+    </div>
+</div>

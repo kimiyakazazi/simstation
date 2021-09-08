@@ -1,0 +1,87 @@
+<!--
+Here you can add your css code
+-->
+<style>
+    .background {
+        width: 100%;
+        height: 100%;
+        background-color: #1A4341;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle {
+
+        height: 200px;
+        width: 170px;   
+        background-image: linear-gradient(to bottom, #998235, #998235 14%, #1A4341 14%, #1A4341 86%, #998235 86%, #998235);
+        border-radius: 100px;
+        align-items: center;      
+       
+    }
+    .internalShape {
+     	
+     	height:100px;
+     	width: 250px;
+     	position:absolute;
+     	background-image: linear-gradient(to bottom, #F3AC3C, #F3AC3C 20% , #1A4341 20%, #1A4341 40%, #F3AC3C 40%, 
+     	#F3AC3C 60%, #1A4341 60%, #1A4341 80%, #F3AC3C 80%, #F3AC3C);
+     	
+
+    }
+
+    .topLeftCorner {
+
+    	width: 30px;
+        height: 30px;
+        position: absolute;
+    	background-color: #1A4341;
+    	transform: rotate(20deg);
+    	margin-left: -260px;
+    	margin-top:-85px;
+
+    }
+    .bottomRightCorner {
+
+    	width: 30px;
+        height: 30px;
+        position: absolute;
+    	background-color: #1A4341;
+    	transform: rotate(20deg);
+    	margin-right: -260px;
+    	margin-bottom:-85px;
+
+    }
+    .topRightCorner {
+
+    	width: 30px;
+        height: 30px;
+        position: absolute;
+    	background-color: #1A4341;
+    	transform: rotate(-20deg);
+    	margin-right: -260px;
+    	margin-top:-85px;
+
+    }
+     .bottomLeftCorner {
+
+    	width: 30px;
+        height: 30px;
+        position: absolute;
+    	background-color: #1A4341;
+    	transform: rotate(-20deg);
+    	margin-left: -260px;
+    	margin-bottom: -85px;
+
+    }
+
+</style>
+
+<div class="background">
+	<div class="circle"></div>
+	<div class="internalShape"></div>
+	<div class="topLeftCorner"></div>
+	<div class="bottomRightCorner"></div>
+	<div class="topRightCorner"></div>
+	<div class="bottomLeftCorner"></div>
+</div>
