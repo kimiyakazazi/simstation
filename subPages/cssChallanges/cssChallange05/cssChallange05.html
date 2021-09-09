@@ -10,42 +10,101 @@ Here you can add your css code
         justify-content: center;
         align-items: center;
     }
-    .head {
-    	width: 170px;
+     .head {
+      width: 170px;
         height: 170px;
         background-color: #1A4341;
         border-radius: 50%;
         position: absolute;
 
     }
+    .leftEye {
+
+      width: 20px;
+        height: 10px; 
+        background-color: #0B2429;
+        border-bottom-left-radius: 35px;  
+        border-bottom-right-radius: 35px; 
+        border: 10px solid #998235;
+        border-top:0;
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 5px;
+        transform: rotateX(10deg);
+
+
+
+    }
+    .rightEye {
+
+      width: 20px;
+        height: 10px; 
+        background-color: #0B2429;
+        border-bottom-left-radius: 35px;  
+        border-bottom-right-radius: 35px; 
+        border: 10px solid #998235;
+        border-top:0;
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 5px;
+        transform: rotateX(10deg);
+
+
+    }
     .leftEar {
 
-      width: 80px;
-      height: 175px;
-      background: radial-gradient(circle at -100% 50%, #0B2429 80%, #1A4341 20%);
-      border-radius: 50%;
-      margin-left: 120px;
+       width: 80px;
+       height: 175px;
+       background: radial-gradient(circle at -100% 50%, #0B2429 80%, #1A4341 20%);
+       border-radius: 50%;
+       margin-left: 120px;
 
     }
 
-	.rightEar {
+  .rightEar {
 
-      width: 80px;
-      height: 175px;
-      background: radial-gradient(circle at -100% 50%, #0B2429 80%, #1A4341 20%);
-      border-radius: 50%;
-      transform: rotateY(180deg);
+       width: 80px;
+       height: 175px;
+       background: radial-gradient(circle at -100% 50%, #0B2429 80%, #1A4341 20%);
+       border-radius: 50%;
+       transform: rotateY(180deg);
      
     
     }
-    
+    .horn {
+
+       width: 80px;
+       height: 40px; 
+       background-color: transparent;
+       border-top-left-radius: 120px;  
+       border-top-right-radius: 120px; 
+       border: 20px solid #ffffff;
+       margin-top: 120px;
+       border-bottom: 0;
+       position: absolute;
+
+    }
+    .nose {
+      width: 40px;
+      height: 125px;
+      background-color: #0B2429;
+      position: absolute;
+      margin-bottom: -158px;
+      border-top-left-radius: 120px;  
+        border-top-right-radius: 120px; 
+    }
+ 
 
 </style>
 
 <div class="background">
-	<div class="rightEar"></div>
-	<div class="head"></div>
-	<div class="leftEar"></div>
-	
-	
+  <div class="rightEar"></div>
+  <div class="head"></div>
+  <div class="leftEye"></div>
+  <div class="rightEye"></div>
+  <div class="leftEar"></div>
+  <div class="horn"></div>
+  <div class="nose"></div>
+  
+  
 </div>
