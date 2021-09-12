@@ -29,7 +29,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: #CECEC0;
+  background-color: #76C3AD;
   right: -100px;
   top: -100px;
   border-radius: 100%;
@@ -38,7 +38,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: #76C3AD;
+  background-color:#80a39d;
   right: -120px;
   top: -120px;
   border-radius: 100%;
@@ -47,14 +47,17 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: #B6DCD5;
+  background-color:  #CECEC0;
   right: -140px;
   top: -140px;
   border-radius: 100%;
 }
-
+.card--title
+{
+  color: #80a39d;
+}
 .card--sub-title {
-  color: gray;
+  color: #76C3AD;
 }
 
 .card--short-description {
