@@ -29,7 +29,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: #CECEC0;
   right: -100px;
   top: -100px;
   border-radius: 100%;
@@ -38,7 +38,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: blue;
+  background-color: #76C3AD;
   right: -120px;
   top: -120px;
   border-radius: 100%;
@@ -47,7 +47,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: yellow;
+  background-color: #B6DCD5;
   right: -140px;
   top: -140px;
   border-radius: 100%;
